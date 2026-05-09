@@ -4,7 +4,7 @@ import Papa from 'papaparse';
 
 // --- CONFIGURACIÓN DE GOOGLE SHEETS ---
 // Reemplaza esto con tu URL de "Publicar en la web" (formato CSV)
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ63ovtRekobx3GvHurMedYnCkkLRt3hOiSX4VQHPmT0VHmqPuZK1LQsqziu7VINYg5sScy6tFXOSPT/pub?gid=1094130624&single=true&output=csv"; 
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyRGxkESfDbdjENmccJDgqS8XhAkCpKw3Sc6pP79wQazOzGT9i1tycFTbMr0WolKx9YqaioomE2S-R/pub?gid=1739515987&single=true&output=csv"; 
 
 const COLORS = {
   'Semillero': '#10b981', // Emerald 500
