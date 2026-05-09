@@ -318,6 +318,15 @@ function GroupModal({ group, allGroups, onClose }) {
           </div>
         </div>
       </div>
+
+      <footer className="mt-8 pb-6 text-center border-t border-slate-200 pt-6">
+        <p className="text-slate-500 text-sm">
+          Realizado por <span className="font-semibold text-slate-800">Tu Nombre o Nombre del Equipo</span>
+        </p>
+        <p className="text-slate-400 text-xs mt-1">
+          Consejo de Vocerías - Facultad de Ciencias Humanas - UNAL
+        </p>
+      </footer>
     </div>
   );
 }
