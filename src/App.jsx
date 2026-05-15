@@ -58,9 +58,10 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col">
+      
       {/* HEADER */}
-      <header className="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-20">
+      <header className="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md">Ψ</div>
@@ -82,7 +83,7 @@ export default function App() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative flex-grow w-full">
         {activeTab === 'map' ? (
           <NetworkMap data={groups} onSelectNode={setSelectedGroup} />
         ) : (
@@ -90,19 +91,22 @@ export default function App() {
         )}
       </main>
 
-      {/* MODAL DETALLES */}
+      {/* FOOTER */}
+      <footer className="w-full bg-white border-t border-slate-200 py-8 mt-auto">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <p className="text-slate-600 text-sm">
+            Realizado por <span className="font-bold text-emerald-700">Ese Espinosa</span>
+          </p>
+          <p className="text-slate-400 text-xs mt-1">
+            Consejo de Vocerías - Facultad de Ciencias Humanas - Universidad Nacional de Colombia
+          </p>
+        </div>
+      </footer>
+
+      {/* MODAL DETALLES  */}
       {selectedGroup && (
         <GroupModal group={selectedGroup} allGroups={groups} onClose={() => setSelectedGroup(null)} />
       )}
-
-      <footer className="mt-8 pb-6 text-center border-t border-slate-200 pt-6">
-        <p className="text-slate-500 text-sm">
-          Realizado por <span className="font-semibold text-slate-800">Tu Nombre o Nombre del Equipo</span>
-        </p>
-        <p className="text-slate-400 text-xs mt-1">
-          Consejo de Vocerías - Facultad de Ciencias Humanas - UNAL
-        </p>
-      </footer>
     </div>
   );
 }
