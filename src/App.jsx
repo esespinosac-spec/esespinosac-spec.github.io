@@ -95,10 +95,10 @@ export default function App() {
       <footer className="w-full bg-white border-t border-slate-200 py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-slate-600 text-sm">
-            Realizado por <span className="font-bold text-emerald-700">Ese Espinosa</span>
+            <span className="font-bold text-emerald-700">Consejo de Vocerías de Psicología - Facultad de Ciencias Humanas - Universidad Nacional de Colombia</span>
           </p>
           <p className="text-slate-400 text-xs mt-1">
-            Consejo de Vocerías - Facultad de Ciencias Humanas - Universidad Nacional de Colombia
+            Realizado por Esteban Espinosa :3
           </p>
         </div>
       </footer>
