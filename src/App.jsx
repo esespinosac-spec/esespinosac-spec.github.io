@@ -103,6 +103,7 @@ export default function App() {
         </div>
       </footer>
 
+
       {/* MODAL DETALLES  */}
       {selectedGroup && (
         <GroupModal group={selectedGroup} allGroups={groups} onClose={() => setSelectedGroup(null)} />
